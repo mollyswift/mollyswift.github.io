@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GIS Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Land Cover Classification</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic3.html">Land Cover Classification</a></li>
+							<li><a href="generic2.html">Choropleth</a></li>
+							<li><a href="generic4.html">Vector Data</a></li>
+							<li><a href="generic5.html">Relative Elevation Model</a></li>
+							<li><a href="generic7.html">LiDAR Data</a></li>
+							<li><a href="generic6.html">Carbon Sequestration</a></li>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>False Colour Composite</h1> 
+							<span class="image main"><img src="images/Annotation 2024-06-18 144310.png" alt="" /></span>
+							<p>The map above shows a false colour composite of a map. Looks different to your regular map doesn’t it, it’s almost like a piece of art! Although it looks difficult I can assure you that this map is actually very simple to make.</p>
+							<p>On Arc GIS Pro as I carried out a land cover classification of an area of Utrecht, Netherlands. The true colour composite is Red: Band 1, Green: Band 2, Blue: Band 3. To get the funky cool map above I simply switched the bands to; Red: Band 3, Green: Band 8, Blue: Band 5. </p>
+							<p> This made all the water in the map so the canals go black, green areas such as field go neon green, and developed areas went neon purple creating a piece of art that still sharply highlights the land usage.</p>
+						</div>
+					</div>
+                 <!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Unsupervised Object Based Classification</h1> 
+							<span class="image main"><img src="images/Suopervised_Object-based_Classification_Landcoverage.png" alt="" /></span>
+							<p>The map shown here is of an area in Utrecht, the same area shown in the False Colour Composite Map above. This map has been generated using an unsupervised object based classification in Arc GIS Pro. Object based classification classifies an image based on groups of pixels that are alike. </p>
+							<p>For those of you who want to know how to render this kind of map, you first select your region of interest on google earth engine, I used Java script to code, but I think there is also oppurtunity for python. You then import this into Arc GIS and it will give you your area of interest on the map. On images Tab in Arc GIS pro you selct the cl;assification wizard, a window will appear. You select Unsupervised Classification Type and Object-based for classification, and leave the classification scheme as default scheme. Then you click run and will render the map shown.  </p>
+							<p> A strength of using this classification method is that it is uncomplicated meaning that the steps to creation are simple. However uncomplicated it is, the map rendered is quite blurry and the colour produced are dark, therfore making it difficult to undwrstand and view different land usages.</p>
+						</div>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>By Molly Swift</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
